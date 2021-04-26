@@ -1,0 +1,73 @@
+.app-header {
+  display: flex;
+  background-color: #263238;
+  height: 36px;
+  padding: 8px 32px 8px 16px;
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 0px 0px 0px;
+  height: 50px;
+}
+
+.search-box-area {
+  position: absolute;
+  right: 5em;
+  width: 300px;
+  background-color: #c0c0c0;
+  border-radius: 4px;
+  margin: auto 0 auto 0;
+  top: 15px;
+}
+
+.search-icon {
+  color: black;
+}
+
+.profile-icon {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.flex-container {
+  display: flex;
+  padding: auto;
+}
+.flex-container > div {
+  margin: 16px;
+}
+@media (max-width: 992px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+.header-thumbnail-image {
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown-content {
+  padding: 15px;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100px;
+  color: #263238;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 1em;
+  border-radius: 10px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.divider {
+  height: 2px;
+  margin: 12px 0;
+  overflow: hidden;
+  background-color: #bbb;
+}
+.logo-name {
+  cursor: pointer;
+}

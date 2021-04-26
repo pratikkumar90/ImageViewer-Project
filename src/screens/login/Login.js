@@ -7,6 +7,7 @@ import Input from "@material-ui/core/Input";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import FormHelperText from "@material-ui/core/FormHelperText";
+import Header from "../../common/header/Header";
 
 class Login extends Component {
   constructor() {
@@ -33,7 +34,7 @@ class Login extends Component {
     let hardCodedUserName = "asd";
     let hardCodedPassword = "123";
 
-    let hardCodedAccessToken = "123";
+    let hardCodedAccessToken = "IGQVJYVklNeEFScHlFdEp5Y2tiMVVjQkxXWnhXN0JYOVQwYjFyNFZAnM0hJamdjblI3b2xnSkZAENkd0WGFKYmVnRWV2RkpFejVUYVBkM0RMa1IxckZA3MGRScFcwQlhkVWYtS05ENVF6WndtOVlKM2VGMgZDZD";
 
     console.log("username=" + this.state.username);
 
@@ -54,6 +55,7 @@ class Login extends Component {
     ) {
       sessionStorage.setItem("access-token", hardCodedAccessToken);
       // Redirect to next page
+      this.props.history.push("/home");
     } else {
       this.setState({ loginControl: "display-block" });
     }
@@ -70,9 +72,7 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <header className="app-header">
-          <p>Image Viewer</p>
-        </header>
+        <Header />
 
         <div className="login-card">
           <br />

@@ -1,0 +1,40 @@
+.grid-list {
+  padding: 0px;
+}
+.poster {
+  width: auto;
+  height: auto;
+}
+
+.poster-image {
+  width: auto;
+  height: auto;
+  max-width: 600px;
+  max-height: 700px;
+}
+
+.show-case {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px !important;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.show-case .gird-tabs {
+  padding: 20px !important;
+  margin: 50px;
+}
+
+.comment {
+  width: 85%;
+  padding-right: 15px !important;
+}
+
+.comment-button {
+  margin-top: 5px !important;
+}
+
+.comment-data {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
