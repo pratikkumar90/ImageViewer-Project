@@ -174,6 +174,7 @@ class Home extends Component {
           displaySearch={true}
           displayProfile={true}
           seachInputHandler={this.seachInputHandler}
+          history={this.props.history}
         ></Header>
         <div className="show-case ">
           {this.state.posts.map(post => (

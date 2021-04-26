@@ -34,7 +34,8 @@ class Login extends Component {
     let hardCodedUserName = "asd";
     let hardCodedPassword = "123";
 
-    let hardCodedAccessToken = "IGQVJYVklNeEFScHlFdEp5Y2tiMVVjQkxXWnhXN0JYOVQwYjFyNFZAnM0hJamdjblI3b2xnSkZAENkd0WGFKYmVnRWV2RkpFejVUYVBkM0RMa1IxckZA3MGRScFcwQlhkVWYtS05ENVF6WndtOVlKM2VGMgZDZD";
+    let hardCodedAccessToken =
+      "IGQVJYVklNeEFScHlFdEp5Y2tiMVVjQkxXWnhXN0JYOVQwYjFyNFZAnM0hJamdjblI3b2xnSkZAENkd0WGFKYmVnRWV2RkpFejVUYVBkM0RMa1IxckZA3MGRScFcwQlhkVWYtS05ENVF6WndtOVlKM2VGMgZDZD";
 
     console.log("username=" + this.state.username);
 
@@ -72,7 +73,7 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header history={this.props.history} />
 
         <div className="login-card">
           <br />

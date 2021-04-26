@@ -20,11 +20,26 @@ class Header extends Component {
     }
   };
 
+  imageViewerHandler = () => {
+    this.props.history.push("/home");
+  };
+
+  myAccountClickHandler = () => {
+    this.props.history.push("/profile");
+  };
+
+  logoutHandler = () => {
+    sessionStorage.removeItem("access-token");
+    this.props.history.push("/");
+  };
+
   render() {
     return (
       <div>
         <div className="app-header">
-          <div className="pointer">Image Viewer</div>
+          <div className="pointer" onClick={this.imageViewerHandler}>
+            Image Viewer
+          </div>
         </div>
         {this.props.displaySearch === true ? (
           <div className="search-box-area">
@@ -51,13 +66,20 @@ class Header extends Component {
               <div className="dropdown-content">
                 {this.props.myAccount !== false ? (
                   <div>
-                    <div className="pointer">My Account</div>
+                    <div
+                      className="pointer"
+                      onClick={this.myAccountClickHandler}
+                    >
+                      My Account
+                    </div>
                     <div className="divider" />
                   </div>
                 ) : (
                   ""
                 )}
-                <div className="pointer">Logout</div>
+                <div className="pointer" onClick={this.logoutHandler}>
+                  Logout
+                </div>
               </div>
             </div>
           </div>
